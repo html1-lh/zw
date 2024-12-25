@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>试题库 - 学习平台</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="img/logo.png" alt="网站Logo" class="logo-img">
+            <h1>学习平台</h1>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">首页</a>
+            <a href="courses.html">课程</a>
+            <a href="quiz.html">试题库</a>
+            <a href="chat.html">在线交流</a>
+            <a href="login.html" id="loginBtn">登录</a>
+        </div>
+    </nav>
+
+    <div class="quiz-container">
+        <div class="quiz-sidebar">
+            <h3>试题分类</h3>
+            <ul class="quiz-categories">
+                <li class="active">第一章 网络安全概述</li>
+                <li>第二章 黑客原理与防范措施</li>
+                <li>第三章 网络病毒��治</li>
+                <li>第四章 密码技术</li>
+                <li>第五章 防火墙技术</li>
+                <li>第六章 Windows的安全与保护机制</li>
+                <li>第七章 Web应用安全</li>
+            </ul>
+        </div>
+        <div class="quiz-main">
+            <div class="quiz-header">
+                <h2>试题列表</h2>
+                <div class="quiz-filters">
+                    <select id="difficultyFilter">
+                        <option value="all">所有难度</option>
+                        <option value="easy">简单</option>
+                        <option value="medium">中等</option>
+                        <option value="hard">困难</option>
+                    </select>
+                    <select id="typeFilter">
+                        <option value="all">所有类型</option>
+                        <option value="single">单选题</option>
+                        <option value="multiple">多选题</option>
+                        <option value="judge">判断题</option>
+                    </select>
+                </div>
+            </div>
+            <div class="quiz-list">
+                <!-- 试题列表将通过 JavaScript 动态加载 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html> 
